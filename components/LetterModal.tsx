@@ -32,13 +32,10 @@ const LetterModal: React.FC<LetterModalProps> = ({ isOpen, onClose }) => {
         {/* Title */}
         <h2 className="text-3xl text-pink-500 mb-4 text-center font-semibold">A Special Letter For You</h2>
 
-        {/* IMAGE: place your downloaded image as `public/image.png` (recommended).
-            Alternative: import letterImg from '../assets/image.png' and use src={letterImg}
-        */}
+        {/* Image (served from public/) */}
         <div className="flex justify-center mb-4">
           <img
             src="/image.jpg"
-            // src={letterImg} // <-- use this if you import at top instead of using public/
             alt="special"
             className="w-28 h-28 object-cover rounded-xl p-2 bg-white shadow-lg border-4 border-pink-200"
             style={{ boxShadow: "0 8px 24px rgba(255, 150, 200, 0.18)" }}
@@ -62,15 +59,15 @@ const LetterModal: React.FC<LetterModalProps> = ({ isOpen, onClose }) => {
             </p>
 
             <p className="mb-4">
-              Every moment with you is like watching a flower bloom magical, precious, and filled with wonder. Thank you
+              Every moment with you is like watching a flower bloom — magical, precious, and filled with wonder. Thank you
               for being the sunshine in my life.
             </p>
 
             <p className="mb-6 text-right text-xl text-pink-600">With all my love,</p>
             <p className="text-right text-xl text-pink-600">Your Secret Admirer 💕</p>
 
-            {/* Add extra filler text to test scrolling if needed */}
-            {/* <p className="mt-6">(extra paragraphs...)</p> */}
+            {/* Extra filler (uncomment for testing scrolling) */}
+            {/* <p className="mt-6">Lorem ipsum dolor sit amet...</p> */}
           </div>
         </div>
       </div>
